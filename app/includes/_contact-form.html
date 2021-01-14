@@ -1,0 +1,39 @@
+<!-- @format -->
+
+<div class="wrapper contact__wrapper contact__wrapper-bottom">
+  <form class="contact__form send__form">
+    <input
+      name="Имя"
+      placeholder="Ваше имя"
+      required
+      type="text"
+      class="input input-contact"
+    />
+    <input
+      required
+      placeholder="Номер телефона"
+      class="telephone input input-contact"
+      type="text"
+      name="Номер телефона"
+    />
+    <input name="файл" id="contact__file" type="file" class="input__hidden" />
+    <textarea
+      placeholder="Ваше сообщение (необязательно)"
+      name="Сообщение"
+      id=""
+      cols="30"
+      rows="10"
+      class="textarea textarea-contact"
+    ></textarea>
+    <p class="contact__text">
+      Если у вас есть изображение или макет дома, который вам нужен, пришлите
+      его нам. Мечты должны сбываться! И мы, знаем, как исполнить вашу!
+    </p>
+    <label for="contact__file" class="contact__file"
+      ><i class="fas fa-paperclip"></i>
+      <span class="file__name">Прикрепить файл</span>
+    </label>
+    <label for="contact__submit" class="btn btn__contact">Отправить</label>
+    <input id="contact__submit" type="submit" class="" />
+  </form>
+</div>

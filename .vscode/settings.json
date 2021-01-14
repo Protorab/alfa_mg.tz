@@ -1,0 +1,12 @@
+{
+  "vetur.grammar.customBlocks": {
+    "docs": "md",
+    "i18n": "json"
+  },
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "normal",
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "viber"
+  ]
+}

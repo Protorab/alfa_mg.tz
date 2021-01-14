@@ -1,0 +1,68 @@
+<!-- @format -->
+
+<form action="" class="top__form send__form">
+  <img
+    src="img/decor/gift.png"
+    loading="lazy"
+    alt="gift"
+    class="top__form-img top__form-img_1"
+  />
+  <img
+    src="img/decor/gift.png"
+    loading="lazy"
+    alt="gift"
+    class="top__form-img top__form-img_2"
+  />
+  <img
+    src="img/decor/tool-1.png"
+    loading="lazy"
+    alt="tool"
+    class="top__form-img top__form-img_3"
+  />
+  <input
+    name="Имя"
+    required
+    placeholder="Ваше имя"
+    class="input input-top"
+    type="text"
+  />
+  <div class="custom-select-wrapper top__select">
+    <input
+      name="Услуга"
+      required
+      id="top__services"
+      class="input__hidden"
+      type="text"
+    />
+    <div class="custom-select">
+      <div class="custom-select__trigger">
+        <span>Выберите услугу</span>
+        <div class="triangle"></div>
+      </div>
+      <div class="custom-options">
+        <span class="custom-option selected" data-value="Выберите услугу"
+          >Выберите услугу</span
+        >
+        <span class="custom-option" data-value="Услуга-1">Услуга-1</span>
+        <span class="custom-option" data-value="Услуга-2">Услуга-2</span>
+        <span class="custom-option" data-value="Услуга-3">Услуга-3</span>
+        <span class="custom-option" data-value="Услуга-4">Услуга-4</span>
+      </div>
+    </div>
+  </div>
+  <input
+    required
+    placeholder="Номер телефона"
+    class="telephone input input-top"
+    type="text"
+    name="Номер телефона"
+  />
+
+  <input class="" id="top__submit" type="submit" />
+
+  <label for="top__submit" class="btn">Отправить</label>
+  <span class="warning"
+    ><img src="img/icons/icon-lock.svg" loading="lazy" alt="" /> Ваши данные не
+    будут переданы третьим лицам</span
+  >
+</form>
