@@ -37,6 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let orderServices = document.querySelector("#top__services");
 
+  if (burgerMenu) {
+    burgerMenu.addEventListener("click", function (e) {
+      this.classList.toggle("__clicked");
+      menu.classList.toggle("__show");
+      e.preventDefault;
+    });
+  }
   if (chooseFile) {
     chooseFile.addEventListener("change", function () {
       getImgData();

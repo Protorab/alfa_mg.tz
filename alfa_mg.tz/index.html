@@ -40,7 +40,7 @@
     src="img/decor/clouds/header/cloud-1.png"
     loading="lazy"
     alt=""
-    class="decoration__img decoration__img-top decoration__img-right"
+    class="decoration__img decoration__img-top decoration__img-right decoration__img-header"
   />
   <div class="wrapper header__wrapper header__wrapper-top">
     <a href="#" class="logo logo__header">
@@ -50,7 +50,7 @@
       <span>Пн-Сб: c 10:00 до 20:00 </span>
       <span> Выходной: воскресенье </span>
     </div>
-    <a href="#" class="order__layout">
+    <a href="#" class="order__layout order__layout-descktop">
       <span class="order__layout-img">
         <img
           src="img/icons/icon-3d.svg"
@@ -60,7 +60,7 @@
       </span>
       <span class="order__layout-text">Заказать 3D-макет дома</span>
     </a>
-    <div class="contact__wrap">
+    <div class="contact__wrap contact__wrap-descktop">
       <a href="tel:+7 (915) 168-55-50" class="phone__icon">
         <img
           src="img/icons/contacts/icon-phone.svg"
@@ -102,9 +102,14 @@
         </div>
       </div>
     </div>
-    <a href="#" data-subject="header-btn" class="btn btn__header show__form">
+    <a
+      href="#"
+      data-subject="Заказать звонок"
+      class="btn btn__header show__form btn__descktop"
+    >
       Заказать звонок
     </a>
+    <div class="burger__menu"><span></span></div>
   </div>
   <div class="wrapper header__wrapper header__wrapper-bottom">
     <ul class="menu" id="menu">
@@ -143,6 +148,67 @@
       <li class="menu__item"><a href="#">О нас</a></li>
       <li class="menu__item"><a href="#">Контакты</a></li>
       <li class="menu__item"><a href="#">Блог</a></li>
+      <a
+        href="#"
+        data-subject="Заказать звонок"
+        class="btn show__form btn__mobile"
+      >
+        Заказать звонок
+      </a>
+      <div class="contact__wrap contact__wrap-mobile">
+        <a href="tel:+7 (915) 168-55-50" class="phone__icon">
+          <img
+            src="img/icons/contacts/icon-phone.svg"
+            loading="lazy"
+            alt="+7 (915) 168-55-50"
+          />
+        </a>
+        <div class="contact__links">
+          <a href="tel:+7 (915) 168-55-50" class="phone">
+            +7 (915) 168-55-50
+          </a>
+          <div class="messengers">
+            <a href="#" class="icon">
+              <img
+                src="img/icons/contacts/icon-whatsapp.svg"
+                loading="lazy"
+                alt="whatsapp"
+              />
+            </a>
+            <a href="#" class="icon">
+              <img
+                src="img/icons/contacts/icon-telegram.svg"
+                loading="lazy"
+                alt="telegram"
+              />
+            </a>
+            <a href="#" class="icon icon__descktop">
+              <img
+                src="img/icons/contacts/icon-viber.svg"
+                loading="lazy"
+                alt="viber"
+              />
+            </a>
+            <a href="#" class="icon icon__mobile">
+              <img
+                src="img/icons/contacts/icon-viber.svg"
+                loading="lazy"
+                alt="viber"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="order__layout order__layout-mobile">
+        <span class="order__layout-img">
+          <img
+            src="img/icons/icon-3d.svg"
+            loading="lazy"
+            alt="Заказать 3D-макет дома"
+          />
+        </span>
+        <span class="order__layout-text">Заказать 3D-макет дома</span>
+      </a>
     </ul>
   </div>
 </header>
@@ -160,13 +226,13 @@
           src="img/decor/clouds/top/cloud-1.png"
           loading="lazy"
           alt="cloud"
-          class="decoration__img decoration__img-top__decoration decoration__img-right"
+          class="decoration__img decoration__img-top__decoration-1 decoration__img-right"
         />
         <img
           src="img/decor/clouds/top/cloud-2.png"
           loading="lazy"
           alt="cloud"
-          class="decoration__img decoration__img-bottom decoration__img-left"
+          class="decoration__img decoration__img-bottom decoration__img-left decoration__img-top__decoration-2"
         />
         <div class="wrapper top__wrapper top__wrapper-top">
           <h1 class="top__title title">
@@ -238,7 +304,7 @@
 
   <input class="" id="top__submit" type="submit" />
 
-  <label for="top__submit" class="btn">Отправить</label>
+  <label for="top__submit" class="btn btn__form">Отправить</label>
   <span class="warning"
     ><img src="img/icons/icon-lock.svg" loading="lazy" alt="" /> Ваши данные не
     будут переданы третьим лицам</span
