@@ -26,17 +26,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".menu");
   const body = document.querySelector("body");
   const fileName = document.querySelector(".file__name");
-  const contactFile = document.getElementById("contact__file");
+  const showTools = document.querySelector(".top__tools-show");
+  const tools = document.querySelector(".top__tools");
 
+  const contactFile = document.getElementById("contact__file");
   const chooseFile = document.getElementById("choose-file");
   let phoneMask = new inputmask({
     mask: "+375-99-999-99-99",
     clearIncomplete: true,
     greedy: false,
   });
-
   let orderServices = document.querySelector("#top__services");
-
+  if (showTools) {
+    showTools.addEventListener("click", () => {
+      tools.classList.toggle("__show");
+    });
+  }
   if (burgerMenu) {
     burgerMenu.addEventListener("click", function (e) {
       this.classList.toggle("__clicked");

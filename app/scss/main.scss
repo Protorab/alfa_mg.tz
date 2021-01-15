@@ -964,9 +964,76 @@
     display: flex;
     flex-direction: column;
     top: 97px;
+    @include _transition(all, .5s);
+
+    &-show {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background: $accent;
+      left: -30px;
+      @include _borderRadius(3px 0 0 3px);
+      box-shadow: -7px 3px 9px 0px rgba(0, 0, 0, 0.75);
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 1px;
+        background: $mainColor;
+        position: absolute;
+        @include _transition(all, .5s);
+
+      }
+
+      &::before {
+        transform: rotate(-45deg);
+        top: 11px;
+      }
+
+      &::after {
+        transform: rotate(45deg);
+        bottom: 11px;
+      }
+
+      @media only screen and (max-width : 600px) {
+        display: flex;
+      }
+
+    }
 
     @media only screen and (max-width : 600px) {
-      display: none;
+      top: 200px;
+      transform: translate(105%, 0%);
+      background: $accent;
+      padding: 10px 0 10px 10px;
+      @include _borderRadius(3px 0 0 3px);
+      box-shadow: 0 4px 15px #000;
+      z-index: 2;
+
+
+      &.__show {
+        transform: translate(0%, 0%);
+
+        .top__tools-show {
+          &::before {
+            transform: rotate(45deg);
+            top: 11px;
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+            bottom: 11px;
+          }
+        }
+      }
     }
 
   }
